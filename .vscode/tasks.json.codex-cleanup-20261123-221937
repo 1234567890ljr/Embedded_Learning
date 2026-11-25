@@ -1,0 +1,93 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C: 编译当前文件",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:/Users/lenovo/.vscode/c-config/c_build.ps1",
+        "-Mode",
+        "CompileCurrent",
+        "-File",
+        "${file}",
+        "-WorkspaceFolder",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "hide": true
+    },
+    {
+      "label": "C: 编译并运行当前文件",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:/Users/lenovo/.vscode/c-config/c_build.ps1",
+        "-Mode",
+        "RunCurrent",
+        "-File",
+        "${file}",
+        "-WorkspaceFolder",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "hide": true
+    },
+    {
+      "label": "C: 编译当前目录全部 .c 文件",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:/Users/lenovo/.vscode/c-config/c_build.ps1",
+        "-Mode",
+        "CompileDirectory",
+        "-File",
+        "${file}",
+        "-WorkspaceFolder",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "hide": true
+    },
+    {
+      "label": "C: 编译并运行当前目录全部 .c 文件",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:/Users/lenovo/.vscode/c-config/c_build.ps1",
+        "-Mode",
+        "RunDirectory",
+        "-File",
+        "${file}",
+        "-WorkspaceFolder",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "hide": true
+    }
+  ]
+}

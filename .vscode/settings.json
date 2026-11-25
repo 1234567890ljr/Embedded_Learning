@@ -1,0 +1,63 @@
+{
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": false,
+
+  "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**"
+  ],
+
+  "C_Cpp_Runner.cCompilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+  "C_Cpp_Runner.debuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+  "C_Cpp_Runner.cStandard": "c17",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.includePaths": [
+    "${workspaceFolder}/**"
+  ],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false,
+  "C_Cpp_Runner.useUndefinedSanitizer": false,
+  "C_Cpp_Runner.useLeakSanitizer": false,
+  "C_Cpp_Runner.showCompilationTime": true,
+  "C_Cpp_Runner.useLinkTimeOptimization": false,
+  "C_Cpp_Runner.compilerArgs": [
+    "-finput-charset=UTF-8",
+    "-fexec-charset=GBK"
+  ],
+
+  "code-runner.runInTerminal": true,
+  "code-runner.preserveFocus": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.ignoreSelection": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.showRunIconInEditorTitleMenu": true,
+  "code-runner.showRunCommandInEditorContextMenu": true,
+  "code-runner.showExecutionMessage": true,
+  "code-runner.executorMap": {
+    "c": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:/Users/lenovo/.vscode/c-config/c_build.ps1\" -Mode RunCurrent -File \"$fullFileName\" -WorkspaceFolder \"$workspaceRoot\""
+  },
+
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+  }
+}
